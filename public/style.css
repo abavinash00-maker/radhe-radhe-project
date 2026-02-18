@@ -1,18 +1,19 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg,#0f172a,#020617);
-  color: white;
+  margin:0;
+  font-family:Arial;
+  background:linear-gradient(135deg,#0f172a,#020617);
+  color:white;
+  scroll-behavior:smooth;
 }
 
 .navbar {
   display:flex;
   justify-content:space-between;
   padding:20px 40px;
-  background:#0f172a;
   position:fixed;
   width:100%;
-  top:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
 }
 
 .nav-links a {
@@ -22,8 +23,15 @@ body {
 }
 
 .hero {
-  padding:150px 20px;
+  padding:160px 20px;
   text-align:center;
+}
+
+.hero h1 {
+  font-size:45px;
+  background:linear-gradient(90deg,#22c55e,#00f2fe);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 .section {
@@ -35,40 +43,60 @@ body {
   background:#0b1220;
 }
 
-.cards {
+.cards, .stats {
   display:flex;
   justify-content:center;
   gap:30px;
   flex-wrap:wrap;
 }
 
-.card {
-  background:#111827;
+.card, .stat-card {
   padding:30px;
-  border-radius:12px;
+  border-radius:15px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
   width:250px;
 }
 
-.pricing-card {
-  background:#111827;
-  padding:40px;
-  border-radius:15px;
+.stat-card h3 {
+  font-size:32px;
+  color:#22c55e;
+}
+
+.image-grid img {
   width:300px;
-  margin:auto;
+  margin:20px;
+  border-radius:10px;
+}
+
+.pricing-wrapper {
+  display:flex;
+  justify-content:center;
+}
+
+.pricing-card {
+  padding:40px;
+  border-radius:20px;
+  width:320px;
+}
+
+.pricing-card ul {
+  list-style:none;
+  padding:0;
 }
 
 .price {
-  font-size:28px;
+  font-size:30px;
   margin:20px 0;
 }
 
-.btn {
-  background:#22c55e;
-  border:none;
+.glass-btn {
+  background:rgba(34,197,94,0.2);
+  border:1px solid #22c55e;
   padding:12px 25px;
-  border-radius:8px;
+  border-radius:10px;
+  color:white;
   cursor:pointer;
-  font-weight:bold;
 }
 
 input {
@@ -78,14 +106,7 @@ input {
   margin-right:10px;
 }
 
-.success {
-  color:#22c55e;
-  display:none;
-  margin-top:15px;
-}
-
 footer {
   padding:30px;
-  background:#0f172a;
   text-align:center;
 }

@@ -1,18 +1,21 @@
 document.getElementById("accessForm").addEventListener("submit", async function(e){
-    e.preventDefault();
+  e.preventDefault();
 
-    const username = document.getElementById("tvUsername").value;
+  const username = document.getElementById("tvUsername").value;
 
-    const response = await fetch("/api/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username })
-    });
+  const res = await fetch("/api/submit", {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({username})
+  });
 
-    if(response.ok){
-        document.getElementById("successMsg").style.display = "block";
-        this.reset();
-    } else {
-        alert("Error submitting username");
-    }
+  const msg = document.getElementById("msg");
+
+  if(res.ok){
+    msg.innerText="Username Submitted Successfully!";
+    msg.style.color="#22c55e";
+  } else {
+    msg.innerText="Error!";
+    msg.style.color="red";
+  }
 });

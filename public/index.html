@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RADHE RADHE | Sudarshan Indicator</title>
+<title>RADHE RADHE | Sudarshan</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,59 +15,77 @@
     <a href="#features">Features</a>
     <a href="#backtest">Backtest</a>
     <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
+    <a href="admin.html">Admin</a>
   </div>
 </nav>
 
 <section id="home" class="hero">
   <h1>Sudarshan Smart Money Indicator</h1>
-  <p>Professional TradingView indicator with accurate Buy & Sell signals.</p>
-  <button class="btn">Get Access</button>
+  <p>Professional TradingView signals with high accuracy.</p>
+  <button class="glass-btn">Get Access</button>
 </section>
 
 <section id="features" class="section">
-  <h2>Why Choose Sudarshan?</h2>
+  <h2>Why Sudarshan?</h2>
   <div class="cards">
-    <div class="card">
-      <h3>High Accuracy</h3>
-      <p>Trend-based smart signals with confirmation.</p>
-    </div>
-    <div class="card">
-      <h3>Risk Management</h3>
-      <p>Built-in RR structure for disciplined trading.</p>
-    </div>
-    <div class="card">
-      <h3>Smart Alerts</h3>
-      <p>Real-time buy & sell signals.</p>
-    </div>
+    <div class="card">Smart Trend Confirmation</div>
+    <div class="card">1:2 Risk Reward Structure</div>
+    <div class="card">72% Historical Win Rate</div>
   </div>
 </section>
 
 <section id="backtest" class="section dark">
   <h2>Backtest Performance</h2>
-  <p>Proven historical results with consistent performance.</p>
+
+  <div class="stats">
+    <div class="stat-card">
+      <h3>72%</h3>
+      <p>Win Rate</p>
+    </div>
+    <div class="stat-card">
+      <h3>1:2</h3>
+      <p>Risk Reward</p>
+    </div>
+    <div class="stat-card">
+      <h3>8%</h3>
+      <p>Max Drawdown</p>
+    </div>
+  </div>
+
+  <div class="image-grid">
+    <img src="backtest1.png">
+    <img src="backtest2.png">
+  </div>
 </section>
 
 <section id="pricing" class="section">
   <h2>Pricing</h2>
-  <div class="pricing-card">
-    <h3>Premium Access</h3>
-    <p class="price">₹4,999</p>
-    <button class="btn">Buy Now</button>
+
+  <div class="pricing-wrapper">
+    <div class="pricing-card glass">
+      <h3>Premium Access</h3>
+      <p class="price">₹4,999</p>
+      <ul>
+        <li>Full Indicator Access</li>
+        <li>Lifetime Updates</li>
+        <li>Telegram Support</li>
+      </ul>
+      <button class="glass-btn">Buy Now</button>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="section dark">
+<section class="section dark">
   <h2>Request Access</h2>
   <form id="accessForm">
-    <input type="text" id="tvUsername" placeholder="Enter TradingView Username" required>
-    <button type="submit" class="btn">Submit</button>
+    <input type="text" id="tvUsername" placeholder="TradingView Username" required>
+    <button type="submit" class="glass-btn">Submit</button>
   </form>
-  <p id="successMsg" class="success">Username submitted successfully!</p>
+  <p id="msg"></p>
 </section>
 
 <footer>
-  © 2026 RADHE RADHE. All rights reserved.
+  © 2026 RADHE RADHE | Sudarshan Indicator
 </footer>
 
 <script src="script.js"></script>
